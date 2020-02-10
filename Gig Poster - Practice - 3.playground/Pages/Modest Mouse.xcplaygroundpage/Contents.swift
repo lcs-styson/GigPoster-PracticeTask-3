@@ -31,7 +31,21 @@ let deepYellow = Color(hue: 46, saturation: 99, brightness: 99, alpha: 100)
 let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your solution here...
+// Create Background
+canvas.fillColor = darkGrey
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 4000, height: 5000)
+// Add rotation
 
+
+// Create yellow line
+
+for y in stride(from: 0, through: 40 * 80, by: 40) {
+  
+        canvas.defaultLineWidth = 20
+        canvas.lineColor = deepYellow
+        canvas.drawLine(from: Point(x: 0, y: y), to: Point(x: 400, y: y))
+   
+    }
 
 /*:
  ## Use Source Control
